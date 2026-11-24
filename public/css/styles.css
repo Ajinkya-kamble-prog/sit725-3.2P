@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container .row {
+  margin-top: 30px;
+}
+
+#plantCards {
+  flex: 1 0 auto;
+}
+
+.brand-logo i.material-icons {
+  margin-right: 6px;
+}
+
+.card .card-image img {
+  height: 200px;
+  object-fit: contain;
+  background: #f1f8e9;
+}
+
+.card-content p i.material-icons.tiny {
+  vertical-align: middle;
+  color: #388e3c;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "sit725-3.2p-plant-care-guide",
+  "version": "1.0.0",
+  "description": "SIT725 Task 3.2P - Express + Materialize Plant Care Guide",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ajinkya Kamble",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

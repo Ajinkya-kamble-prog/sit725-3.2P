@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Care Guide</title>
+
+  <!-- Materialize CSS + Google icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="green darken-2">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo"><i class="material-icons">local_florist</i>Plant Care Guide</a>
+    </div>
+  </nav>
+
+  <!-- Intro section -->
+  <div class="section green lighten-5">
+    <div class="container center-align">
+      <h4 class="green-text text-darken-3">Find the perfect houseplant</h4>
+      <p class="flow-text">Browse popular indoor plants and learn how much light and water each one needs.</p>
+      <a id="addPlantBtn" class="btn-large waves-effect waves-light green darken-1 modal-trigger" href="#addPlantModal">
+        <i class="material-icons left">add</i>Suggest a plant
+      </a>
+    </div>
+  </div>
+
+  <!-- Plant cards are injected here by scripts.js -->
+  <div class="container">
+    <div class="row" id="plantCards"></div>
+  </div>
+
+  <!-- Modal form -->
+  <div id="addPlantModal" class="modal">
+    <div class="modal-content">
+      <h5>Suggest a plant</h5>
+      <div class="row">
+        <form class="col s12" id="plantForm">
+          <div class="input-field col s12">
+            <input id="plantName" type="text" class="validate" required>
+            <label for="plantName">Plant name</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="plantLight" type="text">
+            <label for="plantLight">Light needs</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="plantWater" type="text">
+            <label for="plantWater">Watering schedule</label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id="submitPlant" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer green darken-2">
+    <div class="container center-align white-text">SIT725 Task 3.2P &middot; Ajinkya Kamble</div>
+    <div class="footer-copyright"></div>
+  </footer>
+
+  <!-- jQuery, Materialize JS, our script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
